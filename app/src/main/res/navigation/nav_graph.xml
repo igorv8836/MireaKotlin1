@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/first_fragment"
+    android:id="@+id/nav_graph">
+
+
+    <fragment
+        android:id="@+id/first_fragment"
+        android:name="com.example.mireakotlin1.presentation.ui.FirstFragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/second_fragment"
+        android:name="com.example.mireakotlin1.presentation.ui.SecondFragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/third_fragment"
+        android:name="com.example.mireakotlin1.presentation.ui.ThirdFragment">
+    </fragment>
+
+
+    <action
+        android:id="@+id/action_to_first_fragment"
+        app:destination="@id/first_fragment" />
+
+    <action
+        android:id="@+id/action_to_second_fragment"
+        app:destination="@id/second_fragment" />
+
+    <action
+        android:id="@+id/action_to_third_fragment"
+        app:destination="@id/third_fragment" />
+
+</navigation>
